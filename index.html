@@ -1,0 +1,14 @@
+{% extends "./base.html" %}
+{% block title %}
+Hien Q Le - My 1st Flask-based Product Management
+{% endblock %}
+{% block body %}
+<h1>
+    Manage List of Products:
+    <button type="button" onclick="window.location.href='/table';">Display List of Products</button>
+    <button type="button" onclick="window.location.href='/overwrite';">Overwrite List of Products</button>
+    <button type="button" onclick="window.location.href='/add-products';">Add Products</button>
+    <button type="button" onclick="window.location.href='/update-products';">Update Products</button>
+    <button type="button" onclick="window.location.href='/delete';">Delete Products</button>
+</h1>
+{% endblock %}

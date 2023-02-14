@@ -1,0 +1,14 @@
+{% extends "./base.html" %}
+{% block title %}
+Hien Q Le - My 1st Flask-based Product Management
+{% endblock %}
+{% block body %}
+<table id="demo">
+  <!-- HEADER ROW -->
+  {% for table in tables %}
+  <h3>{{titles[loop.index]}}</h3>                            
+  {{ table|safe }}
+  {% endfor %} 
+</table>
+<button type="button" onclick="window.location.href='/';">Back</button>
+{% endblock %}
